@@ -17,7 +17,7 @@ contract VendingMachineV2 is Initializable {
 
     function purchaseSoda() public payable {
         require(msg.value >= 1000 wei, "You must pay 1000 wei for a soda!");
-        require(numSodas >= 1, "Sorry we are out of stock");
+        require(numSodas >= 1, "Sorry we are out of stock man");
         numSodas--;
         sodaRegistry[msg.sender] += 1;
         // challenge: add a mapping to keep track of user soda purchases!
