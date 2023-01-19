@@ -8,6 +8,7 @@ contract VendingMachineV2 is Initializable {
     // will be preserved forever, regardless of upgrading
     uint public numSodas;
     address public owner;
+    mapping(address => uint) sodaRegistry;
 
     function initialize(uint _numSodas) public initializer {
         numSodas = _numSodas;
@@ -16,7 +17,9 @@ contract VendingMachineV2 is Initializable {
 
     function purchaseSoda() public payable {
         require(msg.value >= 1000 wei, "You must pay 1000 wei for a soda!");
+        require(numSodas >= 1, "Sorry we are out of stock");
         numSodas--;
+        sodaRegistry[msg.sender] += 1;
         // challenge: add a mapping to keep track of user soda purchases!
     }
 
