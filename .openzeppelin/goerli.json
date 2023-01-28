@@ -1,20 +1,20 @@
 {
   "manifestVersion": "3.2",
   "admin": {
-    "address": "0xfB87c38CEc32175A2FF2eBeC0A9866F2221d0456",
-    "txHash": "0x1318b3898ec2ccb80dfdfae9f31e5c3df205ba0b1eff9ed2abdc127647d1e2a1"
+    "address": "0xf288a6CdE93E7edA852CA2fe0C38334cE4e78B63",
+    "txHash": "0xc56593bfcb14e57aa3a4021124f00902553585db6f21d180ee7408db1dc503bc"
   },
   "proxies": [
     {
-      "address": "0x5577719758498AEA78Dcde4a2E9c9Faa6D43943c",
-      "txHash": "0x436d8a072848d8761830e40cd934be7080e8188f64b70f6fef4ef6d07652a382",
+      "address": "0x6d44FBCfA6A3BC359fe752a1AefC440B057Bb13b",
+      "txHash": "0xd94163c05803f20b173f21d87d4d707e67c1cdedb58772a3b94933bacbbe4133",
       "kind": "transparent"
     }
   ],
   "impls": {
     "041666f7011c9b5a8bf6080dc0792fc660df15767181dcdce8b38677929c9b6e": {
-      "address": "0x7Cd0391F9D691fD762F6742937036C89E758Bb9D",
-      "txHash": "0x9a5e5ba267aad83d25e1743c690f6f29e16569c78a06e99ae7d6ed3fada57b3c",
+      "address": "0x9405195aCF3591316Debb7DcF8118FF25F992CF5",
+      "txHash": "0x7b892f36d3dea703b1fabae070f64055ffa25fa12dbf766b12dee441060a2fa5",
       "layout": {
         "solcVersion": "0.8.17",
         "storage": [
@@ -72,9 +72,9 @@
         }
       }
     },
-    "47e3b9ea18db4cda9f16fe6c997aee2c5eec9b979a23109c6cd759a47a05aae7": {
-      "address": "0x916610D60f2439862E79811a6Aa337e006C3BdC2",
-      "txHash": "0x69de8c4c3814f095f85731afd7fab5926e2aae5c2542356e9a3ea61b2e6c72c7",
+    "9b473a45d754a69022c887a09448e679561b88ee8ac02b59936347c6392c943b": {
+      "address": "0x699d4cFb569843A3CD11Ab38A0E1CDe932F8326E",
+      "txHash": "0x94620cace2375c6629200a900bafc978207378056b0d5605c352f7bac9d9942d",
       "layout": {
         "solcVersion": "0.8.17",
         "storage": [
@@ -110,14 +110,6 @@
             "type": "t_address",
             "contract": "VendingMachineV2",
             "src": "contracts/VendingMachineV2.sol:10"
-          },
-          {
-            "label": "sodaRegistry",
-            "offset": 0,
-            "slot": "3",
-            "type": "t_mapping(t_address,t_uint256)",
-            "contract": "VendingMachineV2",
-            "src": "contracts/VendingMachineV2.sol:11"
           }
         ],
         "types": {
@@ -128,82 +120,6 @@
           "t_bool": {
             "label": "bool",
             "numberOfBytes": "1"
-          },
-          "t_mapping(t_address,t_uint256)": {
-            "label": "mapping(address => uint256)",
-            "numberOfBytes": "32"
-          },
-          "t_uint256": {
-            "label": "uint256",
-            "numberOfBytes": "32"
-          },
-          "t_uint8": {
-            "label": "uint8",
-            "numberOfBytes": "1"
-          }
-        }
-      }
-    },
-    "3932fcd5e2070576fd49949c07a92a9a7ffe8c2c0838c9cb188f523d365029d4": {
-      "address": "0x7a33FD56a80c0bC00e0953e3d7BEa15C9EF99dD1",
-      "txHash": "0x22b7cf274fe14e12bbbb0f4108e00ee4f0f4ad64401576bc0310a064ddc27d5f",
-      "layout": {
-        "solcVersion": "0.8.17",
-        "storage": [
-          {
-            "label": "_initialized",
-            "offset": 0,
-            "slot": "0",
-            "type": "t_uint8",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
-            "retypedFrom": "bool"
-          },
-          {
-            "label": "_initializing",
-            "offset": 1,
-            "slot": "0",
-            "type": "t_bool",
-            "contract": "Initializable",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
-          },
-          {
-            "label": "numSodas",
-            "offset": 0,
-            "slot": "1",
-            "type": "t_uint256",
-            "contract": "VendingMachineV2",
-            "src": "contracts/VendingMachineV2.sol:9"
-          },
-          {
-            "label": "owner",
-            "offset": 0,
-            "slot": "2",
-            "type": "t_address",
-            "contract": "VendingMachineV2",
-            "src": "contracts/VendingMachineV2.sol:10"
-          },
-          {
-            "label": "sodaRegistry",
-            "offset": 0,
-            "slot": "3",
-            "type": "t_mapping(t_address,t_uint256)",
-            "contract": "VendingMachineV2",
-            "src": "contracts/VendingMachineV2.sol:11"
-          }
-        ],
-        "types": {
-          "t_address": {
-            "label": "address",
-            "numberOfBytes": "20"
-          },
-          "t_bool": {
-            "label": "bool",
-            "numberOfBytes": "1"
-          },
-          "t_mapping(t_address,t_uint256)": {
-            "label": "mapping(address => uint256)",
-            "numberOfBytes": "32"
           },
           "t_uint256": {
             "label": "uint256",

@@ -16,5 +16,5 @@ async function main() {
 
 main();
 
-// Proxy contract address: 0x5577719758498AEA78Dcde4a2E9c9Faa6D43943c
-// Implementation contract address: 0x7Cd0391F9D691fD762F6742937036C89E758Bb9D
+//Proxy contract address: 0x6d44FBCfA6A3BC359fe752a1AefC440B057Bb13b
+//Implementation contract address: 0x9405195aCF3591316Debb7DcF8118FF25F992CF5
